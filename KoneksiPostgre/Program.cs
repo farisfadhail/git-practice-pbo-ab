@@ -26,10 +26,10 @@ class Program
         //command.ExecuteNonQuery();
         //command.Parameters.Clear();
 
-        //command.Parameters.AddWithValue("nama", "Andi");
-        //command.Prepare();
-        //command.ExecuteNonQuery();
-        //command.Parameters.Clear();
+        command.Parameters.AddWithValue("nama", "Andi");
+        command.Prepare();
+        command.ExecuteNonQuery();
+        command.Parameters.Clear();
 
         command.CommandText = "SELECT * FROM mahasiswa";
         NpgsqlDataReader reader;
